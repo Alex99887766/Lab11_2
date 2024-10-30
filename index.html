@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обчислення арифметичних виразів - ПП-21 Гнатецький</title>
+</head>
+<body>
+<script>
+"use strict";
+
+const x = parseInt(prompt("Введіть значення х", ""));
+let a = x * x - 7 * x + 10;
+let b = x * x - 8 * x + 12;
+let c = a / b;
+
+if (b !== 0) {
+    alert("Результат c = " + c.toFixed(2));
+} else {
+    alert("Ділення на нуль неможливе!");
+}
+
+let d = Math.sqrt(x) + Math.log(x);
+alert("Результат додаткового виразу: √x + ln(x) = " + d.toFixed(2));
+</script>
+</body>
+</html>
